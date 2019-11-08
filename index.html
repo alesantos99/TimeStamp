@@ -8,15 +8,19 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div id = "top" class="container-fluid" style="background-color:#0275d8;">
-                <nav class="navbar navbar-dark bg-primary">
-                    
+            <div class="row">
+           
+                <div id = "top" class="col-12" style="background-color:#0275d8;">
+                
                     <nav class="navbar navbar-dark bg-primary">
-                        <a class="navbar-brand" href="#">TSBásico</a>
+                        
+                        <nav class="navbar navbar-dark bg-primary">
+                            <a class="navbar-brand" href="#">TSBásico</a>
+                        </nav>
+                        
                     </nav>
-                    
-                </nav>
-
+            </div>
+            </div>
             </div>
             <br>
             <br>
@@ -25,19 +29,29 @@
             
            
             <div class="container" id = "center">
-                <label for="h1">Read</label>
+                <h2 class="text-center text-info">Protocolo de controle de concorrência baseado em timestamp </h2>
+                <label for="h1">Primeria História</label>
+            
                 <input type="text" class="form-control" id="h1"  placeholder="Digite a história1">
                 
-                <label for="h2">Read</label>
+                <label for="h2">Segunda História</label>
                 <input type="etext" class="form-control" id="h2"  placeholder="Digite a história2">
-                <p id = "a">b</p>
-            
+                <br>
+                <input type="submit" class="btn btn-primary" onclick="tsbasico()"> 
             </div>
 
         </div>
        
     </body>
-    <script>
+    <script type="text/javascript">
+       import TimeStamp from './TimeStamp';
+
+        function tsbasico(){
+
+            console.log("pass")
+
+        }
+        
     </script>
     
             
